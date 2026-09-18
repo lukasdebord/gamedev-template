@@ -1,0 +1,216 @@
+/*
+ *General styling
+ */
+* {
+  font-family: "Roboto";
+  color: white;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+html {
+  background-image: url("sunset.jpg");
+}
+
+div {
+  display: flex;
+}
+
+button {
+  text-align: left;
+}
+
+/*
+ *Class styling
+ */
+ .body {
+  display: flex;
+  flex-direction: row;
+}
+
+.navagation-bar {
+  flex-direction: column;
+  align-items: left;
+  height: 100vh;
+  width: 300px;
+  padding: 0px 10px 0px 10px;
+  background-color: rgba(54, 54, 54, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.nav-title {
+  padding: 10px 0px 10px 6px;
+ }
+
+.nav-element {
+  flex-direction: column;
+}
+
+.nav-item {
+  flex-direction: row;
+  align-items: center;
+  width: calc(100%-45px);
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+.nav-item:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-arrow {
+  width: 16px;
+  height: 16px;
+}
+.nav-arrow {
+  transition: transform 0.3s;
+}
+.nav-arrow.open {
+  transform: rotate(90deg); /* Rotate arrow */
+}
+.nav-doc {
+  width: 16px;
+  height: 16px;
+}
+
+.dropdown-content {
+  list-style: none;
+  display: none;
+}
+
+.menu-btn {
+  width: calc(100% - 55px);   /* -55px to account for left padding */
+  padding-left: 45px;
+}
+
+.singular-doc {
+  padding-left: 25px;
+}
+
+
+.page {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px 50px 20px;
+  
+}
+
+.page-content {
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.page-title {
+  padding: 20px;
+}
+
+.page-text {
+  padding: 0px 10px 20px 10px;
+}
+/*
+ *ID styling
+ */
+
+#table-of-contents {
+  font-size: 12px;
+  padding: 20px 0px 5px 6px;
+  color: rgb(170, 170, 170);
+}
+
+#concept {
+  display: none;
+}
+
+#objective {
+  display: none;
+}
+
+#core-mechanics {
+  display: none;
+}
+
+#core-loop {
+  display: none;
+}
+
+#player-abilities {
+  display: none;
+}
+
+#level-design {
+  display: none;
+}
+
+#environment-types {
+  display: none;
+}
+
+#level-progression {
+  display: none;
+}
+
+#challenges-objectives {
+  display: none;
+}
+
+#narrative {
+  display: none;
+}
+
+#characters {
+  display: none;
+}
+
+#visual-style {
+  display: none;
+}
+
+#sound-music {
+  display: none;
+}
+
+#platform {
+  display: none;
+}
+
+#game-engine {
+  display: none;
+}
+
+#development-phases {
+  display: none;
+}
+
+#milestones {
+  display: none;
+}
+
+#concept-art {
+  display: none;
+}
+
+#technical-specifications {
+  display: none;
+}
+
+#game-world-details {
+  display: none;
+}
+
+#ui-designs {
+  display: none;
+}

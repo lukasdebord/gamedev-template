@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROJECT 1.0.0 - Home</title>
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!--Fonts via google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&family=Salsa&display=swap" rel="stylesheet">
+    <!--Java script files-->
+    <script src="/docs/scripts/navagation-buttons.js"></script>
+  </head>
+
+
+
+  <body class="body">
+    <!--Navigation Bar-->
+    <div class="navagation-bar">
+      <div class="nav-element">
+        <h5 id="table-of-contents">Table of Contents</h5>
+      </div>
+
+      <div class="nav-element nav-title">
+        <strong><em><u>Design Document</u></em></strong>
+      </div>
+
+      <!--Game Overview-->
+      <div class="nav-element">
+        <div class="nav-item" onclick="toggleMenu(this)">
+          <img src="assets/arrow.png" class="nav-arrow"></img>
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Game Overview</h4>
+        </div>
+          <ul class="dropdown-content">
+            <li class="nav-item menu-btn" onclick="loadPage('concept')">Concept</li>
+            <li class="nav-item menu-btn" onclick="loadPage('objective')">Objective</li>
+          </ul>
+      </div>
+
+      <!--Gameplay mechanics-->
+      <div class="nav-element">
+        <div class="nav-item" onclick="toggleMenu(this)">
+          <img src="assets/arrow.png" class="nav-arrow"></img>
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Gameplay Mechanics</h4>
+        </div>
+          <ul class="dropdown-content">
+            <li class="nav-item menu-btn" onclick="loadPage('core-mechanics')">Core mechanics</li>
+            <li class="nav-item menu-btn" onclick="loadPage('core-loop')">Core loop</li>
+            <li class="nav-item menu-btn" onclick="loadPage('player-abilities')">Player abilities</li>
+          </ul>
+      </div>
+
+      <!--Level design-->
+      <div class="nav-element">
+        <div class="nav-item" onclick="toggleMenu(this)">
+          <img src="assets/arrow.png" class="nav-arrow"></img>
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Level Design</h4>
+        </div>
+          <ul class="dropdown-content">
+            <li class="nav-item menu-btn" onclick="loadPage('level-design')">Level design overview</li>
+            <li class="nav-item menu-btn" onclick="loadPage('environment-types')">Environment types</li>
+            <li class="nav-item menu-btn" onclick="loadPage('level-progression')">Level progression</li>
+            <li class="nav-item menu-btn" onclick="loadPage('challenges-objectives')">Challenges and objectives</li>
+          </ul>
+      </div>
+
+      <!--Story and Characters-->
+      <div class="nav-element">
+        <div class="nav-item" onclick="toggleMenu(this)">
+          <img src="assets/arrow.png" class="nav-arrow"></img>
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Story and Characters</h4>
+        </div>
+          <ul class="dropdown-content">
+            <li class="nav-item menu-btn" onclick="loadPage('narrative')">Narrative</li>
+            <li class="nav-item menu-btn" onclick="loadPage('characters')">Characters</li>
+          </ul>
+      </div>
+
+      <!--Art and Sound Design-->
+      <div class="nav-element">
+        <div class="nav-item" onclick="toggleMenu(this)">
+          <img src="assets/arrow.png" class="nav-arrow"></img>
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Art and Sound Design</h4>
+        </div>
+          <ul class="dropdown-content">
+            <li class="nav-item menu-btn" onclick="loadPage('visual-style')">Visual style</li>
+            <li class="nav-item menu-btn" onclick="loadPage('sound-music')">Sound and music</li>
+          </ul>
+      </div>
+
+      <!--Technical Details-->
+      <div class="nav-element">
+        <div class="nav-item" onclick="toggleMenu(this)">
+          <img src="assets/arrow.png" class="nav-arrow"></img>
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Technical Details</h4>
+        </div>
+          <ul class="dropdown-content">
+            <li class="nav-item menu-btn" onclick="loadPage('platform')">Platform</li>
+            <li class="nav-item menu-btn" onclick="loadPage('game-engine')">Game engine</li>
+          </ul>
+      </div>
+
+      <!--Project Timeline and Milestones-->
+      <div class="nav-element">
+        <div class="nav-item" onclick="toggleMenu(this)">
+          <img src="assets/arrow.png" class="nav-arrow"></img>
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Project Timeline and Milestones</h4>
+        </div>
+          <ul class="dropdown-content">
+            <li class="nav-item menu-btn" onclick="loadPage('development-phases')">Development phases</li>
+            <li class="nav-item menu-btn" onclick="loadPage('milestones')">Milestones</li>
+          </ul>
+      </div>
+
+      <div class="nav-element nav-title">
+        <Strong><em><u>Appendices</u></em></Strong>
+      </div>
+
+      <!--Concept Art-->
+      <div class="nav-element">
+        <div class="nav-item singular-doc"  onclick="loadPage('concept-art')">
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Concept Art</h4>
+        </div>
+      </div>
+
+      <!--Technical Specifications-->
+      <div class="nav-element">
+        <div class="nav-item singular-doc"  onclick="loadPage('technical-specifications')">
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Technical Specifications</h4>
+        </div>
+      </div>
+
+      <!--Game World Details-->
+      <div class="nav-element">
+        <div class="nav-item singular-doc" onclick="loadPage('game-world-details')">
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">Game World Details</h4>
+        </div>
+      </div>
+
+      <!--UI Designs-->
+      <div class="nav-element">
+        <div class="nav-item singular-doc" onclick="loadPage('ui-designs')">
+          <img src="assets/doc.png" class="nav-doc"></img>
+          <h4">UI Designs</h4>
+        </div>
+      </div>
+    </div>
+
+  <!--Page Content-->
+  <div class="page">
+    <!--Concept-->
+    <div class="page-content" id="concept">
+      <h1 class="page-title">Concept</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Objective-->
+    <div class="page-content" id="objective">
+      <h1 class="page-title">Objective</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Core mechanics-->
+    <div class="page-content" id="core-mechanics">
+      <h1 class="page-title">Core mechanics</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Core loop-->
+    <div class="page-content" id="core-loop">
+      <h1 class="page-title">Core loop</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Player abilities-->
+    <div class="page-content" id="player-abilities">
+      <h1 class="page-title">Player abilities</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Level design overview-->
+    <div class="page-content" id="level-design">
+      <h1 class="page-title">Level design overview</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Environment types-->
+    <div class="page-content" id="environment-types">
+      <h1 class="page-title">Environment types</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Level progression-->
+    <div class="page-content" id="level-progression">
+      <h1 class="page-title">Level progression</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Challenges and objectives-->
+    <div class="page-content" id="challenges-objectives">
+      <h1 class="page-title">Challenges and objectives</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Narrative-->
+    <div class="page-content" id="narrative">
+      <h1 class="page-title">Narrative</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Characters-->
+    <div class="page-content" id="characters">
+      <h1 class="page-title">Characters</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Visual style-->
+    <div class="page-content" id="visual-style">
+      <h1 class="page-title">Visual style</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Sound and music-->
+    <div class="page-content" id="sound-music">
+      <h1 class="page-title">Sound and music</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Platform-->
+    <div class="page-content" id="platform">
+      <h1 class="page-title">Platform</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Game engine-->
+    <div class="page-content" id="game-engine">
+      <h1 class="page-title">Game engine</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Development phases-->
+    <div class="page-content" id="development-phases">
+      <h1 class="page-title">Development phases</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Milestones-->
+    <div class="page-content" id="milestones">
+      <h1 class="page-title">Milestones</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Concept Art-->
+    <div class="page-content" id="concept-art">
+      <h1 class="page-title">Concept Art</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Technical Specifications-->
+    <div class="page-content" id="technical-specifications">
+      <h1 class="page-title">Technical Specifications</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--Game World Details-->
+    <div class="page-content" id="game-world-details">
+      <h1 class="page-title">Game World Details</h1>
+      <p class="page-text">yap</p>
+    </div>
+
+    <!--UI Designs-->
+    <div class="page-content" id="ui-designs">
+      <h1 class="page-title">UI Designs</h1>
+      <p class="page-text">yap</p>
+    </div>
+  </div>
+
+  </body>
+</html>
